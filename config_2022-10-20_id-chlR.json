@@ -1,0 +1,49 @@
+{
+  "Subsets": {
+    "sub": [""],
+    "ses": [""],
+    "rec": [""],
+    "task": [""],
+    "run": [""],
+    "TracerName": [""],
+    "ModeOfAdministration": ["infusion"],
+    "InstitutionName": [""],
+    "PharmaceuticalName": [""]
+  },
+  "Model": {
+    "ParentFraction": {
+      "Method": ["Interpolation"],
+      "set_ppf0": [true],
+      "starttime": [0],
+      "endtime": ["Inf"],
+      "gam_k": ["6"],
+      "hgam_formula": [""]
+    },
+    "BPR": {
+      "Method": ["Interpolation"],
+      "starttime": [0],
+      "endtime": ["inf"],
+      "gam_k": [6],
+      "hgam_formula": [""]
+    },
+    "AIF": {
+      "Method": ["Fit Individually: FengConv"],
+      "starttime": [0.01],
+      "endtime": ["Inf"],
+      "expdecay_props": ["NA", "NA"],
+      "inftime": ["NA"],
+      "spline_kb": [""],
+      "spline_ka_m": [""],
+      "spline_ka_a": [""]
+    },
+    "WholeBlood": {
+      "Method": ["Fit Individually: Splines"],
+      "dispcor": [false],
+      "starttime": [0],
+      "endtime": ["Inf"],
+      "spline_kb": [""],
+      "spline_ka_m": [""],
+      "spline_ka_a": [""]
+    }
+  }
+}
