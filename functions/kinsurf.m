@@ -16,7 +16,7 @@ for idx = 1:numel(BIDS.subjects)
     for n = 1:numel(hemi)
 
         input_file = fullfile(BIDS.pth, 'derivatives/rCPS', subj, ses, ...
-            'pet', [subj '_' ses '_desc-VcPDIF_pet.nii.gz']);
+            [subj '_' ses '_desc-VcPDIF_stat-rCPS_statmap.nii.gz']);
         output_file = fullfile(output_dir, subj, ses, ...
             'pet',[subj '_' ses '_space-fsaverage_pvc-nopvc_hemi-' hemi{n} '_desc-VcPDIF_rcps.nii.gz']);
 
