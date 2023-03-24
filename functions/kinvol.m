@@ -13,7 +13,7 @@ for idx = 1:numel(BIDS.subjects)
     ses = BIDS.subjects(idx).session;
 
     input_file = fullfile(BIDS.pth, 'derivatives/rCPS', subj, ses, ...
-        'pet', [subj '_' ses '_desc-VcPDIF_pet.nii.gz']);
+        [subj '_' ses '_desc-VcPDIF_stat-rCPS_statmap.nii.gz']);
 
     output_file = fullfile(output_dir, subj, ses, ...
         'pet',[subj '_' ses '_space-mni305_pvc-nopvc_desc-VcPDIF_rcps.nii.gz']);
@@ -29,6 +29,7 @@ for idx = 1:numel(BIDS.subjects)
 
     input_file = fullfile(output_dir, subj, ses, ...
         'pet',[subj '_' ses '_space-mni305_pvc-nopvc_desc-VcPDIF_rcps.nii.gz']);
+
     output_file = fullfile(output_dir, subj, ses, ...
         'pet',[subj '_' ses '_space-mni305_sm-06_desc-VcPDIF_rcps.nii.gz']);
 
