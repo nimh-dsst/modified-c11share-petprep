@@ -1,6 +1,6 @@
 {
     "env": {
-        "derivatives_dir": "PETPrep", 
+        "derivatives_dir": "rcps-modified-petprep", 
         "nproc": 8
     },
     "preproc": {
